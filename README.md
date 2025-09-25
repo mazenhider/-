@@ -1,18 +1,42 @@
-# -
-eng mazen hider
-Subject: I Have an Idea to Improve Facebook
+Video Classification and Description with BLIP Fine-tuning
 
-Dear Meta Team,
+This project implements a video classification and captioning system using BLIP (Bootstrapped Language-Image Pre-training) with partial fine-tuning. The system is designed to classify short video clips into predefined action categories and generate concise textual descriptions of the video content.
 
-My name is Eng. Mazen Ahmed Ali Haidar, a Computer and Control Engineer from Yemen and a graduate of Ibb University.
+Features
 
-I’m writing to let you know that I have a valuable idea that I believe can improve the performance and safety of the Facebook platform. I would be honored to share it with your team or the relevant department if there is an opportunity to collaborate.
+Video Classification: Classifies videos into four action categories:
+ApplyLipstick, PlayingPiano, TrampolineJumping, ShavingBeard.
 
-Thank you for your time, and I hope to hear from you soon.
+Video Captioning: Generates a short description of the video using the BLIP model.
 
-Sincerely,  
-Eng. Mazen Ahmed Ali Haidar  
-Phone: +967716053268  
-Email: mazenhider733@gmail.com  
-Location: Ibb, Yemen
+Frame-based Processing: Extracts frames from uploaded videos for efficient processing.
 
+Gradio Interface: Provides a user-friendly web interface to upload videos and get predictions.
+
+Partial Fine-tuning: Fine-tunes only the last layer of BLIP’s vision model along with a custom classifier to reduce training time and GPU memory usage.
+
+Technologies Used
+
+PyTorch – Deep learning framework.
+
+Transformers – Pre-trained BLIP model and processor.
+
+OpenCV – Video frame extraction.
+
+Gradio – Interactive web interface.
+
+Usage
+
+Upload a video through the Gradio interface.
+
+The system predicts the video class.
+
+A short textual description of the video is generated.
+
+Potential Applications
+
+Action recognition in videos.
+
+Automatic video summarization.
+
+Multimedia content analysis and tagging
